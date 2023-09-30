@@ -1,0 +1,14 @@
+.parent {
+    width: 800px;
+    height: 800px;
+    background-color: #FDE5D4;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+.parent > div:hover {
+    background-color: #001524;
+}
