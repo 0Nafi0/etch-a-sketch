@@ -3,9 +3,13 @@ const parentContainer = document.querySelector(".parent");
 const body = document.querySelector("body");
 function createNewDiv() {
     const newDiv = document.createElement("div");
-    const side = (800 / grid).toString() + "px";
+    const side = (640 / grid).toString() + "px";
     newDiv.style.width = side;
     newDiv.style.height = side;
+    newDiv.addEventListener("mouseover", (event) => {
+        if (event.buttons > 0)
+        newDiv.style.background = "#001524";
+    })
     parentContainer.appendChild(newDiv);
 }
 
